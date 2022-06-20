@@ -82,7 +82,7 @@ for n in range(5, 50):
 # > 0.9795918367346939
 ```
 
-![](../../assets/images/2022-06-18-20-47-29.png)
+![](./assets/images/2022-06-18-20-47-29.png)
 
 # 2-1 훈련 세트와 테스트 세트
 - 훈련 세트
@@ -140,8 +140,8 @@ print(test_target)
 # > [0. 0. 1. 0. 1. 0. 1. 1. 1. 1. 1. 1. 1.] # stratify 매개변수 적용 후
 ```
 
-![](../../assets/images/2022-06-19-11-43-53.png)
-![](../../assets/images/2022-06-19-11-44-36.png)
+![](./assets/images/2022-06-19-11-43-53.png)
+![](./assets/images/2022-06-19-11-44-36.png)
 > 가로, 세로의 스케일(scale)이 다르기 때문
 
 ### 데이터 전처리
@@ -173,7 +173,7 @@ plt.ylabel('weight')
 plt.show()
 ```
 
-![](../../assets/images/2022-06-19-12-03-38.png)
+![](./assets/images/2022-06-19-12-03-38.png)
 
 # 3-1 K-최근접 이웃 회귀
 : K-Nearest Neighbor Regression

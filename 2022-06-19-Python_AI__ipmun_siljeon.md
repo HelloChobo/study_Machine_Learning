@@ -237,35 +237,35 @@ for i in range(10):
     p = p - lr*M/(np.sqrt(V) + eps)
 ```
 ### 블로그 https://yhyun225.tistory.com/ 참고
-![](../../assets/images/2022-06-20-21-34-16.png)
+![](./assets/images/2022-06-20-21-34-16.png)
 - 경사하강법의 한계
   1. 많은 연산량과 컴퓨터 자원 소모
   2. Local Minima (지역 극소값) 문제  
    (다만 가중치의 개수가 많아질수록 손실 함수의 critical point 대부분이 saddle point가 되고 local minimum이 될 확률이 매우 희박하다는 의견도 있음)
-   ![](../../assets/images/2022-06-20-21-39-47.png)
+   ![](./assets/images/2022-06-20-21-39-47.png)
   3. Plateau 현상 (고원 현상)  
    : 기울기가 평탄한 지점에서 결국 최소값까지 가지 못하고 정지해버리는 현상
-   ![](../../assets/images/2022-06-20-21-40-02.png)
+   ![](./assets/images/2022-06-20-21-40-02.png)
   4. Oscillation (진동) 문제  
    : 진동하며 최적값에 느리게 수렴.  
    진동폭이 크다는 것은 가중치가 불완전하게 수렴한다는 것  
-   ![](../../assets/images/2022-06-20-21-40-12.png)
+   ![](./assets/images/2022-06-20-21-40-12.png)
 
 - 배치 경사하강법 (BGD, Batch Gradient Descent)  
   = 일반적 경사하강법  
   : 한 번의 가중치 업데이트에 모든 데이터를 사용
   > 데이터가 1000개 있을 때 **모든 batch** 에 대하여 Loss function 계산 후 함수를 최소화하는 방향으로 w 업데이트  
   `# batch : 피자 1조각`
-  ![](../../assets/images/2022-06-20-21-45-51.png)
+  ![](./assets/images/2022-06-20-21-45-51.png)
 - 확률적 경사하강법 (SGD, Stochastic Gradient Descent)
   :  확률적으로(랜덤하게) 데이터를 뽑아 한 번의 반복당 한 개의 데이터를 사용하여 가중치들을 업데이트하는 방법
   > 데이터가 1000개 있을 때 **임의의 1개의 batch** 에 대하여 
-  ![](../../assets/images/2022-06-20-21-45-00.png)
+  ![](./assets/images/2022-06-20-21-45-00.png)
     - 경사하강법과 달리 SGD는 연산량이 비교적 매우 적어 손실 함수의 최적값에 빠른 수렴 속도를 보이고 메모리 소비량이 적음
 - 미니배치 경사하강법(MSGD, Mini-batch Gradient Descent)  
   : BGD보다는 연산량이 적고, SGD보다 안정적으로 수렴한다는 장점
   > 머신러닝에서 'SGD를 이용한다'라고 하면 대부분 '미니배치 경사하강법을 사용한다'
-   ![](../../assets/images/2022-06-20-21-58-48.png)
+   ![](./assets/images/2022-06-20-21-58-48.png)
 
 # 손실함수 (Loss Function)
 : 예측값과 실제값(레이블)의 차이를 구하는 함수
